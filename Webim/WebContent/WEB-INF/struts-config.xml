@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+ 
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+"http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+	</form-beans>
+
+	<global-forwards>
+	</global-forwards>
+
+	<action-mappings>
+		<action path="/boot" type="webim.actions.BootAction">
+			<forward name="success" path="/bootjs.jsp"/>
+		</action>
+		<action path="/online" type="webim.actions.OnlineAction">
+		</action>
+		<action path="/offline" type="webim.actions.OfflineAction">
+		</action>
+		<action path="/buddies" type="webim.actions.BuddiesAction">
+		</action>
+		<action path="/clear_history" type="webim.actions.ClearHistoryActioin">
+		</action>
+		<action path="/dowload_history" type="webim.actions.DownloadHistoryAction">
+			<forward name="success" path="download_history.jsp">
+			</forward>
+		</action>
+		<action path="/history" type="webim.actions.HistoryAction">
+		</action>
+		<action path="/join" type="webim.actions.JoinAction">
+		</action>
+		<action path="/leave" type="webim.actions.LeaveAction">
+		</action>
+		<action path="/members" type="webim.actions.MembersAction">
+		</action>
+		<action path="/menus" type="webim.actions.MenusAction">
+		</action>
+		<action path="/message" type="webim.actions.MessageAction">
+		</action>
+		<action path="/notifications" type="webim.actions.NotificationsAction">
+		</action>
+		<action path="/presence" type="webim.actions.PresenceAction">
+		</action>
+		<action path="/status" type="webim.actions.StatusAction">
+		</action>
+		<action path="/refresh" type="webim.action.RefreshAction">
+		</action>
+		<action path="/setting" type="webim.actions.SettingAction">
+		</action>
+		<action path="/upload" type="webim.actions.UploadAction">
+		</action>
+	</action-mappings>
+
+</struts-config>
+
